@@ -6,9 +6,12 @@ export const calculatorArr = {
     answer: document.getElementById('add-answer-value'),
     func: function () {
       const result = +this.input1.value + +this.input2.value;
+      console.log(result);
+      return result;
+    },
+    funcClear: function () {
       this.input1.value = "";
       this.input2.value = "";
-      return result;
     }
   },
   subtract: {
@@ -18,9 +21,11 @@ export const calculatorArr = {
     answer: document.getElementById('sub-answer-value'),
     func: function () {
       const result = +this.input1.value - +this.input2.value;
+      return result;
+    },
+    funcClear: function () {
       this.input1.value = "";
       this.input2.value = "";
-      return result;
     }
   },
   multiply: {
@@ -33,6 +38,10 @@ export const calculatorArr = {
       this.input1.value = "";
       this.input2.value = "";
       return result;
+    },
+    funcClear: function () {
+      this.input1.value = "";
+      this.input2.value = "";
     }
   },
   divide: {
@@ -45,6 +54,10 @@ export const calculatorArr = {
       this.input1.value = "";
       this.input2.value = "";
       return result;
+    },
+    funcClear: function () {
+      this.input1.value = "";
+      this.input2.value = "";
     }
   },
   modulo: {
@@ -57,6 +70,10 @@ export const calculatorArr = {
       this.input1.value = "";
       this.input2.value = "";
       return result;
+    },
+    funcClear: function () {
+      this.input1.value = "";
+      this.input2.value = "";
     }
   },
   quotient: {
@@ -69,6 +86,10 @@ export const calculatorArr = {
       this.input1.value = "";
       this.input2.value = "";
       return result;
+    },
+    funcClear: function () {
+      this.input1.value = "";
+      this.input2.value = "";
     }
   },
 };
