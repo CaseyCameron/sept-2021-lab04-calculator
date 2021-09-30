@@ -6,7 +6,6 @@ export const calculatorArr = {
     answer: document.getElementById('add-answer-value'),
     func: function () {
       const result = +this.input1.value + +this.input2.value;
-      console.log(result);
       return result;
     },
     funcClear: function () {
