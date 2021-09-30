@@ -2,11 +2,11 @@
 body {        
     font-family: 'Titillium Web', sans-serif;
     background-color: #FFFCFA;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     padding: 30px;
 }
 
@@ -19,9 +19,12 @@ header {
     justify-content: space-between;
 }
 
-header img {
-    height: 100%;
-    object-fit: contain;
+section {
+    display: grid;
+    grid-template-columns: .5fr .5fr .25fr .5fr .5fr .25fr .25fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -32,4 +35,15 @@ h1 {
 footer {
     background-color: #FAF0EA;
     padding: 10px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    width: 75%;
 }

@@ -1,9 +1,7 @@
-// import functions
+import { calculatorArr } from './utils.js';
 
-// reference needed DOM elements
-
-
-// set event listeners 
-    // get user input(s)
-    // do any needed work with the value(s)
-    // update DOM to reflect new value(s)
+calculatorArr.map(ele => {
+    ele.button.addEventListener('click', () => {
+        ele.answer.textContent = ele.func();
+    });
+});

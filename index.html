@@ -13,18 +13,74 @@
 
 <body>
     <header>
-        <h1>My App</h1>
-        <img src="assets/big-logo.png" />
-    </header>
-    
-    <main>
+        <h1>Calculate Stuff</h1>
 
-        Make a Web App!
-        
+    </header>
+
+    <main>
+        <section class="add">
+            <span>Add: </span>
+            <input type="text" id="add-input-1" />
+            <span>+</span>
+            <input type="text" id="add-input-2" />
+            <button id="add-button">Submit</button>
+            <span>=</span>
+            <span id="add-answer-value"></span>
+        </section>
+
+        <section class="sub">
+            <span>Subtract:</span>
+            <input type="text" id="sub-input-1" />
+            <span>-</span>
+            <input type="text" id="sub-input-2" />
+            <button id="sub-button">Submit</button>
+            <span>=</span>
+            <span id="sub-answer-value"></span>
+        </section>
+
+        <section class="mul">
+            <span>Multiply:</span>
+            <input type="text" id="mul-input-1" />
+            <span>*</span>
+            <input type="text" id="mul-input-2" />
+            <button id="mul-button">Submit</button>
+            <span>=</span>
+            <span id="mul-answer-value"></span>
+        </section>
+
+        <section class="div">
+            <span>Divide:</span>
+            <input type="text" id="div-input-1" />
+            <span>/</span>
+            <input type="text" id="div-input-2" />
+            <button id="div-button">Submit</button>
+            <span>=</span>
+            <span id="div-answer-value"></span>
+        </section>
+
+        <section class="mod">
+            <span>Remainder:</span>
+            <input type="text" id="mod-input-1" />
+            <span>%</span>
+            <input type="text" id="mod-input-2" />
+            <button id="mod-button">Submit</button>
+            <span>=</span>
+            <span id="mod-answer-value"></span>
+        </section>
+
+        <section class="int-div">
+            <span>Quotient:</span>
+            <input type="text" id="int-div-input-1" />
+            <span>%</span>
+            <input type="text" id="int-div-input-2" />
+            <button id="int-div-button">Submit</button>
+            <span>=</span>
+            <span id="int-div-answer-value"></span>
+        </section>
+
     </main>
 
     <footer>
-        &copy; 2021 Alchemy Code Lab
     </footer>
 
     <script type="module" src="./app.js"></script>
