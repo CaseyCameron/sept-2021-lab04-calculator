@@ -1,5 +1,5 @@
-export const calculatorArr = [
-  {
+export const calculatorArr = {
+  add: {
     input1: document.getElementById('add-input-1'),
     input2: document.getElementById('add-input-2'),
     button: document.getElementById('add-button'),
@@ -11,7 +11,7 @@ export const calculatorArr = [
       return result;
     }
   },
-  {
+  subtract: {
     input1: document.getElementById('sub-input-1'),
     input2: document.getElementById('sub-input-2'),
     button: document.getElementById('sub-button'),
@@ -23,7 +23,7 @@ export const calculatorArr = [
       return result;
     }
   },
-  {
+  multiply: {
     input1: document.getElementById('mul-input-1'),
     input2: document.getElementById('mul-input-2'),
     button: document.getElementById('mul-button'),
@@ -35,7 +35,7 @@ export const calculatorArr = [
       return result;
     }
   },
-  {
+  divide: {
     input1: document.getElementById('div-input-1'),
     input2: document.getElementById('div-input-2'),
     button: document.getElementById('div-button'),
@@ -47,7 +47,7 @@ export const calculatorArr = [
       return result;
     }
   },
-  {
+  modulo: {
     input1: document.getElementById('mod-input-1'),
     input2: document.getElementById('mod-input-2'),
     button: document.getElementById('mod-button'),
@@ -59,7 +59,7 @@ export const calculatorArr = [
       return result;
     }
   },
-  {
+  quotient: {
     input1: document.getElementById('int-div-input-1'),
     input2: document.getElementById('int-div-input-2'),
     button: document.getElementById('int-div-button'),
@@ -71,4 +71,4 @@ export const calculatorArr = [
       return result;
     }
   },
-];
+};

@@ -1,7 +1,7 @@
 import { calculatorArr } from './utils.js';
 
-calculatorArr.map(ele => {
-    ele.button.addEventListener('click', () => {
-        ele.answer.textContent = ele.func();
+Object.keys(calculatorArr).map(function (key) {
+    calculatorArr[key].button.addEventListener('click', () => {
+        calculatorArr[key].answer.textContent = calculatorArr[key].func();
     });
 });
